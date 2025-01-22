@@ -10,17 +10,19 @@ export const getStaticProps = async () => {
     props: {
       blog: data.contents,
     },
+    // revalidate: 10,
   };
 };
 
 export default function Home({ blog }) {
   return (
-    <div className={styles.page}>
+    <main className={styles.main}>
+      <h1>◯◯ブログ</h1>
       {blog.map((blog) => (
-        <li key={blog.id}>
+        <h2 key={blog.id} className={styles.title}>
           <Link href={`blog/${blog.id}`}>{blog.title}</Link>
-        </li>
+        </h2>
       ))}
-    </div>
+    </main>
   );
 }
