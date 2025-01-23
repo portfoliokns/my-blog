@@ -31,7 +31,6 @@ export default function BlogId({ blog }) {
     <main className={styles.main}>
       <Header />
       <h1 className={styles.title}>{blog.title}</h1>
-      <p className={styles.publishedAt}>{blog.publishedAt}</p>
       <div
         dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
         className={styles.post}

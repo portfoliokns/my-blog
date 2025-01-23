@@ -33,6 +33,10 @@ h2 {
   background-color: #e2f3f8;
   padding: 1rem;
   border-radius: 12px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 h1 {
@@ -51,4 +55,28 @@ footer {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
 }

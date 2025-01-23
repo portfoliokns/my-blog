@@ -1,8 +1,20 @@
 .main {
   width: 960px;
+  max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .logo {
   width: 100%;
+}
+
+@media (max-width: 750px) {
+  .main {
+    width: 100%;
+    padding: 0 6px;
+  }
+  .logo {
+    width: 100%;
+  }
 }
